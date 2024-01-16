@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em Html5</title>
+</head>
+<body>
+    <h1>Imagem Dinamica</h1>
+    <p>Tente abrir essa imgames em varios aparelhos</p>
+    
+    <picture>
+        <source media="(max-width:750px )" srcset="imagem/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagem/foto-m.png" type="image/png">
+        <img src="imagem/foto-g.png" alt="texte">
+    </picture>
+    
+    
+   <!--Teste realizando com imagem real--> 
+    <picture>
+        <source media="(max-width:750px )" srcset="imagem/apple300corte.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagem/apple700corte.png" type="image/png">
+        <img src="imagem/apple1000.png" alt="texte">
+
+    </picture>
+    <!--<picture>
+        <source media="(max-width:750px )" srcset="imagem/pequeno.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagem/medio.png" type="image/png">
+        <img src="imagem/grande.png" alt="face">
+    </picture>-->
+
+    <h1>Reproduzindo audio</h1>
+    <P>Vamos aprender a reproduzir audio em HTML5</P>
+    <audio prelond="metadata" controls >
+        <source src="midia/music.mp3" type="audio/mpeg">
+    </audio>
+
+</body>
+</html>
